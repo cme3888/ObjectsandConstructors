@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+ $(document).ready(function() {
 
 // object (1)
 
@@ -14,24 +14,25 @@ var petsTemplate = function(petsData) {
 	return markup;
 };
 
+
 var pets = [
 
     {
-	pet: 'cat';
-	name: 'Casper';
-	},
+	pet:'cat';
+	name:'Casper';
+	};
 	{
-	pet: 'cat';
-	name: 'Riskit';
-	},
+	pet:'cat';
+	name:'Riskit';
+	};
 	{
-	pet: 'dog';
-	name:  'Honda';
-	},
+	pet:'dog';
+	name:'Honda';
+	};
 	{
 	pet:'dog';
 	name:'Juliet';
-	}
+	};
 	{
 	pet:'turtle';
 	name:'TurtsMaGurts';
@@ -40,7 +41,7 @@ var pets = [
 
 ];
 
-$('.Pets').append();
+$('.pets').append(petsTemplate(pets));
 
 
 // object (2)
@@ -57,7 +58,7 @@ var bookTemplate = function(bookData) {
 	return markup;
 };
 
-var Books  =  [
+var books  =  [
 	{
 		book:'House of Sand';
 		author:'The Sand-Man';
@@ -78,7 +79,7 @@ var Books  =  [
 
 ];
 
-$(".books").append();
+$(".books").append(bookTemplate(books));
 
 
 
